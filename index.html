@@ -19,6 +19,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TGGKZBJ');</script>
 <!-- End Google Tag Manager -->
 
+const url = new URL('https://iftykar.github.io/impact?key1=ifty&key2=ifty@email.com');
+const params = new URLSearchParams(url.search);
+params.append('key1', 'ifty');
+params.append('key1', 'ifty@email.com');
+console.log(params.get('key1'));
 
   </head>
   <body>
@@ -53,11 +58,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>Click the button!:</p>
 
 <button>Click me</button>
-  const url = new URL('https://iftykar.github.io/impact/?key1=ifty&key2=ifty@email.com');
-const params = new URLSearchParams(url.search);
-params.append('key1', 'ifty');
-params.append('key1', 'ifty@email.com');
-console.log(params.get('key1'));
+  
 
 </body>
 </html>
