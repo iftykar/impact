@@ -21,8 +21,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <body>
       <script>
-        const queryStr = 'key1=ifty&key2=ifty@email.com'
-        const usp = new URLSearchParams(queryStr)
+        //const queryStr = 'key1=ifty&key2=ifty@email.com'
+        const usp = new URLSearchParams({
+          key1: 'ifty',
+          key2: 'ifty@email.com',
+        })
         
         console.log(usp.toString())
       </script>
