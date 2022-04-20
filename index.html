@@ -25,11 +25,10 @@ for (let p of params) {
 params.set('key1', 'ifty@email.com');
 console.log(params.has('key1'));
 
-params.append('key2', 'ifty@email.com');
-console.log(params.getAll('key2'));
+params.set('key2', 'ifty@email.com');
+console.log(params.has('key2'));
 
-console.log(params.toString());        
-      
+console.log(params.toString());    
       </script>
     </body>
       
