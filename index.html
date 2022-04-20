@@ -28,6 +28,11 @@ console.log(url);
         
 //window.location.href = url; 
  
+ const params = new URLSearchParams(url)
+ for (const param of params) {
+  console.log(param)
+}
+ 
  window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
   "name":"ifty",
