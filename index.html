@@ -25,16 +25,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 var url = "https://iftykar.github.io/impact/?" + query.toString();
 console.log(url);
  var params = new URLSearchParams(url.search)
- for (const param of params) {
-  console.log(param)
-}
-        
+ 
 //window.location.href = url; 
  
  window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
-  "name":"ifty",
-  "email":"ifty@email.com"
+  "name":params.get('name'),
+  "email":params.get('email')
 });
       
       </script>
