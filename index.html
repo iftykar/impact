@@ -14,22 +14,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <body>
       <script>
-        let url = new URL('https://iftykar.github.io/impact/?key1=ifty&key2=ifty@email.com'); 
-
-let params = new URLSearchParams(url.search.slice(1));
-
-for (let p of params) {
-  console.log(p);
-}
-
-params.set('key1', 'ifty');
-console.log(params.has('key1'));
-
-params.set('key2', 'ifty@email.com');
-console.log(params.has('key2'));
-
-console.log(params.toString());
-      
+        var query = new URLSearchParams({
+  name : "ifty", 
+  email : "ifty@email.com",
+});
+query.append("KEY", "VALUE"); 
+ 
+var url = "https://iftykar.github.io/impact/" + query.toString();
+console.log(url);
+ 
+// (C) WHATEVER COMES NEXT...
+// REDIRECT OR AJAX CALL OR FETCH
+// window.location.href = url; 
       
       </script>
     </body>
