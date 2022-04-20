@@ -25,13 +25,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 var url = "https://iftykar.github.io/impact/?" + query.toString();
 console.log(url);
  var params = new URLSearchParams(url.search)
- const pvar = new URLSearchParams(url.search)
-        
-//window.location.href = url; 
- 
- for (const param of pvar) {
+ for (const param of params) {
   console.log(param)
 }
+        
+//window.location.href = url; 
  
  window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
