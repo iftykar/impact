@@ -21,13 +21,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <body>
       <script>
-        const queryStr = 'key1=ifty&key2=ifty@email.com'
-        const usp = new URLSearchParams(queryStr)
-        
-        usp.set('key1','ifty')
-        usp.set('key2','ifty@email.com')
-        
-        console.log(usp.toString())        
+        let url = new URL('https://iftykar.github.io/impact/?key1=ifty&key2=ifty@email.com'); 
+
+let params = new URLSearchParams(url.search.slice(1));
+
+for (let p of params) {
+  console.log(p);
+}
+
+params.set('key1', 'ifty@email.com');
+console.log(params.has('key1'));
+
+params.append('key2', 'ifty@email.com');
+console.log(params.getAll('key2'));
+
+console.log(params.toString());        
       
       </script>
     </body>
